@@ -1,0 +1,20 @@
+[package]
+name = "syn-ack"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+aya = "0.12"
+aya-log = "0.2"
+clap = { version = "4.1", features = ["derive"] }
+syn-ack-common = { path = "../syn-ack-common", features = ["user"] }
+anyhow = "1"
+env_logger = "0.10"
+libc = "0.2"
+log = "0.4"
+tokio = { version = "1.25", features = ["macros", "rt", "rt-multi-thread", "net", "signal"] }
+
+[[bin]]
+name = "syn-ack"
+path = "src/main.rs"

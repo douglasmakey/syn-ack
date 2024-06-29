@@ -1,0 +1,3 @@
+[workspace]
+resolver = "2"
+members = ["xtask", "syn-ack", "syn-ack-common"]
